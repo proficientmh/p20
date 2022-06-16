@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/regular.css" integrity="sha384-e7wK18mMVsIpE/BDLrCQ99c7gROAxr9czDzslePcAHgCLGCRidxq1mrNCLVF2oaj" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/brands.css" integrity="sha384-S5yUroXKhsCryF2hYGm7i8RQ/ThL96qmmWD+lF5AZTdOdsxChQktVW+cKP/s4eav" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/78af0e5939.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="sidenav">
+
+        <div class="logo">
+            <img src="img/chat-logo-navbar.png" alt="">
+        </div>
+        <div class="dropdown invisible-main">
+            <a class="btn btn-secondary dropdown-toggle invisible-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="point-gray"></div>invisible
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item option-online" href="#"><i
+                            class="fas fa-circle text-success me-1"></i>online</a>
+                </li>
+                <li><a class="dropdown-item option-online" href="#"><i
+                            class="fas fa-circle text-warning me-1"></i>Away</a></li>
+                <li><a class="dropdown-item option-online" href="#"><i
+                            class="fas fa-circle text-secondary me-1"></i>invisible</a></li>
+            </ul>
+        </div>
+        <a href="#home" class="pt-4"><i class="fas fa-home ms-4 me-3"></i>Home</a>
+        <a href="#visitors" class="pt-4 tablinks" onclick="openCity(event, 'Visitors')" id="defaultOpen"><i
+                class="fas fa-user ms-4 me-3"></i>Visitors</a>
+        <a href="#History" class="pt-4" class="pt-4 tablinks" onclick="openCity(event, 'History')"><i
+                class="fas fa-clock ms-4 me-3"></i>History <span
+                class="badge bg-secondary rounded-pill ps-3 pe-3">50</span></a>
+        <a href="#Analytics" class="pt-4 tablinks" onclick="openCity(event, 'Analytics')"><i
+                class="fas fa-chart-bar ms-4 me-3"></i> Analytics</a>
+        <a href="#monitors" class="pt-4"><i class="fab fa-watchman-monitoring ms-4 me-3"></i>Monitors</a>
+        <button class="dropdown-btn" class="pt-4"><i class="fas fa-cog ms-4 me-3"></i>Settings
+            <i class="fa fa-caret-down"></i>
+        </button>
+
+        <!-- <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button> -->
+
+
+        <div class="dropdown-container">
+            <a href="#" class="pe-3">Agents</a>
+            <a href="#">Departments</a>
+            <a href="#">Roles</a>
+            <a href="#">Routine</a>
+            <a href="#">Shortcutes</a>
+            <a href="#">Banned</a>
+            <a href="#">Triggers</a>
+            <a href="#">Goal</a>
+            <a href="#">Widget</a>
+            <a href="#Personal" class="tablinks" onclick="openCity(event, 'Personal')">Personal</a>
+            <a href="#">Acoount</a>
+        </div>
+        <button class="dropdown-btn"><i class="fab fa-steam-symbol ms-4 me-3"></i>Team
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">View all <span class="badge bg-secondary rounded-pill ps-3 pe-3">1</span></a>
+            <a href="#"><i class="fas fa-circle text-success me-1"></i>Rgaegal</a>
+
+        </div>
+        <div class="request-show">
+            <span>0 requests</span>
+        </div>
+    </div>
+
+    <div class="section main tabcontent" id="Visitors">
+        <div class="visitor">
+            <div class="header d-flex">
+                <div class="name me-auto">
+                    <p class="visitors-name">Visitors</p>
+                </div>
+                <div class="ms-auto d-flex">
+                    <div class="dropdown">
+                        <a class="btn menu-btn menu-btn-1 user-icon dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-th-large"></i>
+                        </a>
+
+                        <ul class="dropdown-menu main-menu-dropdown" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-headset"></i> Support <br>
+                                    <div class="d-bal">Agent Workspace</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-quidditch"></i> Guide <br>
+                                    <div class="d-bal">Help Center</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-feather"></i> Gather <br>
+                                    <div class="d-bal">Comunnity Forum</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-comment-dots"></i> Chat <br>
+                                    <div class="d-bal">Live chat & messaging</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-instalod"></i> Talk <br>
+                                    <div class="d-bal">Voice</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-sellcast"></i> Sell <br>
+                                    <div class="d-bal">Sales CRM</div>
+                                </a></li>
+                            <li class="menu-last-item text-center"><a class="dropdown-item text-center text-primary" href="#">Admin Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn menu-btn menu-btn-2 dropdown-toggle user-icon" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle "></i>
+                        </a>
+
+                        <ul class="dropdown-menu main-menu-2" aria-labelledby="dropdownMenuLink">
+                            <li class="first-item"><a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i>
+                                    moltopersonal <br> <small>View Profile</small></a></li>
+                            <li><a class="dropdown-item" href="#">Get help</a></li>
+                            <li><a class="dropdown-item" href="#">Chat help center</a></li>
+                            <li><a class="dropdown-item" href="#">keybord Shortcuts</a></li>
+                            <li><a class="dropdown-item" href="#">Check connection</a></li>
+                            <li><a class="dropdown-item" href="#">Download debug report</a></li>
+                            <li><a class="dropdown-item" href="#">Privecy policy</a></li>
+                            <li class="menu-last-item"><a class="dropdown-item" href="#">Leaves</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <!-- dropdown -->
+
+
+
+
+            </div>
+            <hr>
+            <div class="btn-group-list d-flex">
+                <div class="btn-group btn-s" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn">List</button>
+                    <button type="button" class="btn">Visual</button>
+                </div>
+                <p class="total-para ms-auto">Total: 2</p>
+            </div>
+            <hr>
+            <div class="activity-sellect d-flex">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Group by Activity</option>
+                    <option value="1">Activity</option>
+                    <option value="2">Page title</option>
+                    <option value="3">Page URL</option>
+                    <option value="3">Country</option>
+                    <option value="3">Serving Agent</option>
+                    <option value="3">Department</option>
+                    <option value="3">Browser</option>
+                    <option value="3">Search Engine</option>
+                    <option value="3">Search term</option>
+                </select>
+                <input type="search" name="" id="" class="search-btn ms-auto" placeholder="search">
+            </div>
+            <hr>
+        </div>
+        <div class="accordion-system">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <span>Currently served</span>
+                            <span class="ms-auto">Visitors: 2</span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Visitor</th>
+                                        <th scope="col">Online</th>
+                                        <th scope="col">Served by</th>
+                                        <th scope="col">Viewing</th>
+                                        <th scope="col">Referrer</th>
+                                        <th scope="col">Visits</th>
+                                        <th scope="col">Chats</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                                    <tr>
+                                        <td scope="row" class="visitors-table d-flex"><span class="message-div"><i
+                                                    class="fas fa-comment-dots message"></i></span> #348978687 <span class="group-fonts ms-auto"><i class="fas fa-flag"
+                                                    title="country flag"></i><i class="fab fa-windows ms-2 me-2"
+                                                    title="windows 10"></i><i class="fab fa-chrome me-3"
+                                                    title="google chrome"></i></span></td>
+                                        <td>10 Min</td>
+                                        <td>Karem Gamal</td>
+                                        <td title="https://aribagold.com/manage/kyc"><span class="badge bg-secondary">2</span> Sell OSRS Gold | Sell RSGP | Sell RS3 Gold | Sell Fast Osrs Gold | Se...</td>
+                                        <td><i class="fas fa-search"></i> -</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <span>Active visitors</span>
+                            <span class="ms-auto">Visitors: 2</span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Visitor</th>
+                                        <th scope="col">Online</th>
+                                        <th scope="col">Viewing</th>
+                                        <th scope="col">Referrer</th>
+                                        <th scope="col">Visits</th>
+                                        <th scope="col">Chats</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                                    <tr>
+                                        <td scope="row" class="visitors-table d-flex"><span class="eye-div"><i
+                                                    class="fas fa-eye"></i></span> #348978687 <span class="group-fonts ms-auto"><i class="fas fa-flag"
+                                                    title="country flag"></i><i class="fab fa-windows ms-2 me-2"
+                                                    title="windows 10"></i><i class="fab fa-chrome me-3"
+                                                    title="google chrome"></i></span></td>
+                                        <td>10 Min</td>
+                                        <td title="https://aribagold.com/manage/kyc"><span class="badge bg-secondary">2</span> Sell OSRS Gold | Sell RSGP | Sell RS3 Gold | Sell Fast Osrs Gold | Se...</td>
+                                        <td><i class="fas fa-search"></i> -</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <span>Idle website visitors</span>
+                            <span class="ms-auto">Visitors: 2</span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Visitor</th>
+                                        <th scope="col">Online</th>
+                                        <th scope="col">Viewing</th>
+                                        <th scope="col">Referrer</th>
+                                        <th scope="col">Visits</th>
+                                        <th scope="col">Chats</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                                    <tr>
+                                        <td scope="row" class="visitors-table d-flex"><span class="clock-div"><i
+                                                    class="fas fa-clock"></i></span> #348978687 <span class="group-fonts ms-auto"><i class="fas fa-flag"
+                                                    title="country flag"></i><i class="fab fa-windows ms-2 me-2"
+                                                    title="windows 10"></i><i class="fab fa-chrome me-3"
+                                                    title="google chrome"></i></span></td>
+                                        <td>10 Min</td>
+                                        <td title="https://aribagold.com/manage/kyc"><span class="badge bg-secondary">2</span> Sell OSRS Gold | Sell RSGP | Sell RS3 Gold | Sell Fast Osrs Gold | Se...</td>
+                                        <td><i class="fas fa-search"></i> -</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-user-circle "></i> Guest
+                                    <span class="group-fonts ms-auto"><i class="fas fa-flag" title="country flag"></i><i
+                                            class="fab fa-windows ms-2 me-2" title="windows 10"></i><i
+                                            class="fab fa-chrome me-3" title="google chrome"></i></span></h5>
+                                <span class="ms-auto ms-3">
+                                    <div class="dropdown">
+                                        <a class="btn select-menu-btn btn-secondary dropdown-toggle" href="#"
+                                            role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Action
+                                        </a>
+
+                                        <ul class="dropdown-menu select-dropdown-menu"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Invite agent/transfer to agent</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Transfer to department</a></li>
+                                            <li><a class="dropdown-item" href="#">Export Transcript</a></li>
+                                            <li><a class="dropdown-item" href="#">Ban visitor</a></li>
+                                            <li><a class="dropdown-item" href="#">Translate chat</a></li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <button type="button" class="btn-close ms-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                <ul class="nav nav-tabs" id="embTab" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" id="current-tab" data-bs-toggle="tab" href="#current" role="tab" aria-controls="current" aria-selected="true">Current Chat</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" id="past-tab" data-bs-toggle="tab" href="#past" role="tab" aria-controls="past" aria-selected="false">Past Chat</a></li>
+                                </ul>
+                                <div class="tab-content all-chat" id="myTabContent">
+                                    <!-- current chat  -->
+                                    <div class="row tab-pane fade show d-flex" id="current" role="tabpanel" aria-labelledby="current-tab">
+                                        <div class="chat-status modal-left col-md-9 col-sm-12">
+                                            <div class="top-status p-2">
+                                                <div class="current-chat-para d-flex">
+                                                    <p class="ps-5"><i>yalingokbayir@gmail.com has joined.</i></p>
+                                                    <p class="ms-auto">6:21</p>
+                                                </div>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message"><i class="fas fa-circle me-1"></i>Find a coupon inside discord and many others giveways<i class="fas fa-circle ms-1 me-1"></i><a href="#">https://discord.gg/Ydgjk457</a></p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit amet.</p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, amet?</p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit amet consectetur.</p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis <br> fugiat recusandae eius accusantium commodi? Necessitatibus reprehenderit hic at ipsum, aut magnam.</p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, labore.</p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit amet.</p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis!</p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis sapiente molestiae quod totam molestias.
+                                                </p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit.</p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sed enim debitis soluta beatae nobis?
+                                                </p>
+                                                <div class="cleint-message d-flex">
+                                                    <p class="aribaGold"><b>AribaGold</b></p>
+                                                    <p class="ms-auto">5:24</p>
+                                                </div>
+                                                <p class="realtime-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, possimus.</p>
+                                                <p class="text-center">
+                                                    <i>visitor 44789 has chenge their name of guest</i>
+                                                </p>
+
+                                            </div>
+                                            <div class="bottom-status">
+                                                gbrelzaahir@gmail.com has gone offline.
+                                            </div>
+                                            <div class="emoji">
+                                                <p><i class="fas fa-smile ps-2"></i> Emoji <i class="fas fa-thumbs-up ps-2"></i> Rating <i class="fas fa-paperclip ps-2"></i> Attach</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-right col-md-3 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-2 guest-logo">
+                                                    <i class="fas fa-user-circle "></i>
+                                                </div>
+                                                <div class="col-10">
+                                                    <h4>Guest</h4>
+                                                    <input type="email" name="email" id="" placeholder="Add email">
+                                                </div>
+                                            </div>
+                                            <input class="mt-3" type="text" name="" id="" placeholder="Add mobile number">
+                                            <textarea class="mt-3" name="" id="" rows="5" placeholder="Add visitors notes"></textarea>
+                                            <div class="tag d-flex">
+                                                <p>Tags</p>
+                                                <p class="ms-auto question-modal" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                                                    ?</p>
+                                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalToggleLabel">
+                                                                    Tags
+                                                                </h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Categorize and group chats with tags to gain insight into your chat sessions. <a href="">Learn more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>Add chat tags</p>
+                                            <hr>
+                                            <div class="row w-100 ms-auto me-1">
+                                                <div class="col-4 border-div bd-one">
+                                                    <h4 class="text-bold amount-message">44</h4>
+                                                    <p>Past visits</p>
+                                                </div>
+                                                <div class="col-4 border-div">
+                                                    <h4 class="text-bold amount-message">48</h4>
+                                                    <p>Past chats</p>
+                                                </div>
+                                                <div class="col-4 border-div bd-two">
+                                                    <h4 class="text-bold amount-message">50 <span> mins</span></h4>
+                                                    <p>Time on site</p>
+                                                </div>
+                                            </div>
+                                            <div class="visitor-path">
+                                                <p>Visitors path</p>
+                                                <p><span>&darr; </span> Direct Trafic</p>
+                                                <p><span>&diams; </span> AribaGold - Buy OSRS Gold | Buy RS Gold | C</p>
+                                                <p></p>
+                                            </div>
+                                            <div class="last-div-right">
+                                                <p>Location <br> Switzerland <br> Browser <br> Chrome 102.0.5005.63 <br> Platform <br> Windows 10 <br> Device <br> - <br> IP address <br> 194.126.177.90 <br> Hostname <br> - <br> User agent <br> Mozilla/5.0
+                                                    (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- past chat  -->
+
+                                    <div class="past-chat row tab-pane fade d-flex" id="past" role="tabpanel" aria-labelledby="past-tab">
+                                        <div class="chat-status past-chat-status modal-left col-md-9 col-sm-12">
+                                            <table class="table table-2 past-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Agent</th>
+                                                        <th scope="col">Satisfaction</th>
+                                                        <th scope="col">Time</th>
+                                                        <th scope="col">Messages</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                        <td>Dhoche</td>
+                                                        <td>-</td>
+                                                        <td>Apr 24 9:15 PM</td>
+                                                        <td><span class="badge bg-secondary">2</span>Lorem ipsum dolor sit amet.
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                        <td>Dhoche</td>
+                                                        <td>-</td>
+                                                        <td>Apr 24 9:15 PM</td>
+                                                        <td><span class="badge bg-secondary">2</span>Lorem ipsum dolor sit amet consectetur. </td>
+                                                    </tr>
+                                                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                        <td>Dhoche</td>
+                                                        <td><i class="fas fa-thumbs-up ps-2"></i></td>
+                                                        <td>Apr 24 9:15 PM</td>
+                                                        <td><span class="badge bg-secondary">2</span>Lorem, ipsum dolor sit amet consectetur adipisicing.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="modal-left history-modal">
+                                                <div class="d-flex history-menu">
+                                                    <p class="text-bold mt-2 ps-2 chatting-time">Chat on wednesday, June 08 2022 4:59:22 PM</p>
+                                                    <div class="ms-auto">
+                                                        <i class="fas fa-download pe-3 mt-3"></i>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+                                                </div>
+                                                <div class="chat-status-2">
+                                                    <div class="top-status-2 p-2">
+                                                        <div class="history-table">
+                                                            <table>
+                                                                <tbody class="">
+                                                                    <tr class="tr-hover">
+                                                                        <td class="pe-5">Rating</td>
+                                                                        <td>_</td>
+                                                                    </tr>
+                                                                    <tr class="tr-hover">
+                                                                        <td class="pe-5">Comment</td>
+                                                                        <td>_</td>
+                                                                    </tr>
+                                                                    <tr class="tr-hover">
+                                                                        <td class="pe-5">Tags</td>
+                                                                        <td><i class="fas fa-pen"></i></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="history-para-main d-flex">
+                                                            <p class=" history-para"><i>yalingokbayir@gmail.com has joined.</i></p>
+                                                            <p class="ms-auto">6:21</p>
+                                                        </div>
+                                                        <div class="cleint-message d-flex">
+                                                            <p class="aribaGold"><b>AribaGold</b></p>
+                                                            <p class="ms-auto">5:24</p>
+                                                        </div>
+                                                        <p class="realtime-message"><i class="fas fa-circle me-1"></i>Find a coupon inside discord and many others giveways<i class="fas fa-circle ms-1 me-1"></i><a href="#">https://discord.gg/Ydgjk457</a></p>
+                                                        <div class="cleint-message d-flex">
+                                                            <p class="aribaGold text-warning"><b>Guest</b></p>
+                                                            <p class="ms-auto">5:24</p>
+                                                        </div>
+                                                        <p class="realtime-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque ut corporis recusandae. Similique quam provident debitis quae nihil repudiandae!
+                                                        </p>
+                                                        <div class="cleint-message d-flex text-center">
+                                                            <p class="text-center"><b>Karim has joined now</b></p>
+                                                            <p class="ms-auto">5:24</p>
+                                                        </div>
+                                                        <p class="realtime-message text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        </p>
+                                                        <div class="cleint-message d-flex">
+                                                            <p class="aribaGold text-warning"><b>callumleemerryy@gmail.com</b></p>
+                                                            <p class="ms-auto">5:24</p>
+                                                        </div>
+                                                        <p class="realtime-message">how are you?</p>
+                                                        <div class="cleint-message d-flex">
+                                                            <p class="aribaGold"><b>AribaGold</b></p>
+                                                            <p class="ms-auto">5:24</p>
+                                                        </div>
+                                                        <p class="realtime-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        </p>
+                                                        <div class="cleint-message d-flex">
+                                                            <p class="aribaGold"><b>AribaGold</b></p>
+                                                            <p class="ms-auto">5:24</p>
+                                                        </div>
+                                                        <p class="realtime-message">Lorem ipsum dolor sit amet consectetur.</p>
+                                                        <div class="history-para-main d-flex">
+                                                            <p class=" history-para"><i><small>yalingokbayir@gmail.com has
+                                                                        joined.</small></i></p>
+                                                            <p class="ms-auto">6:21</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-right col-md-3 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-2 guest-logo">
+                                                    <i class="fas fa-user-circle "></i>
+                                                </div>
+                                                <div class="col-10">
+                                                    <h4>Guest</h4>
+                                                    <input type="email" name="email" id="" placeholder="Add email">
+                                                </div>
+                                            </div>
+                                            <input class="mt-3" type="text" name="" id="" placeholder="Add mobile number">
+                                            <textarea class="mt-3" name="" id="" rows="5" placeholder="Add visitors notes"></textarea>
+                                            <div class="tag d-flex">
+                                                <p>Tags</p>
+                                                <p class="ms-auto question-modal" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                                                    ?</p>
+                                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalToggleLabel">
+                                                                    Tags
+                                                                </h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Categorize and group chats with tags to gain insight into your chat sessions. <a href="">Learn more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>Add chat tags</p>
+                                            <hr>
+                                            <div class="row w-100 ms-auto me-1">
+                                                <div class="col-4 border-div bd-one">
+                                                    <h4 class="text-bold amount-message">44</h4>
+                                                    <p>Past visits</p>
+                                                </div>
+                                                <div class="col-4 border-div">
+                                                    <h4 class="text-bold amount-message">48</h4>
+                                                    <p>Past chats</p>
+                                                </div>
+                                                <div class="col-4 border-div bd-two">
+                                                    <h4 class="text-bold amount-message">50 <span> mins</span></h4>
+                                                    <p>Time on site</p>
+                                                </div>
+                                            </div>
+                                            <div class="visitor-path">
+                                                <p>Visitors path</p>
+                                                <p><span>&darr; </span> Direct Trafic</p>
+                                                <p><span>&diams; </span> AribaGold - Buy OSRS Gold | Buy RS Gold | C</p>
+                                                <p></p>
+                                            </div>
+                                            <div class="last-div-right">
+                                                <p>Location <br> Switzerland <br> Browser <br> Chrome 102.0.5005.63 <br> Platform <br> Windows 10 <br> Device <br> - <br> IP address <br> 194.126.177.90 <br> Hostname <br> - <br> User agent <br> Mozilla/5.0
+                                                    (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End visitors section  -->
+
+    <!-- start history section  -->
+    <div class="section main tabcontent" id="History">
+        <div class="visitor">
+            <div class="header d-flex">
+                <div class="name me-auto">
+                    <p class="visitors-name">History</p>
+                </div>
+                <div class="ms-auto d-flex">
+                    <div class="dropdown">
+                        <a class="btn menu-btn menu-btn-1 user-icon dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-th-large"></i>
+                        </a>
+
+                        <ul class="dropdown-menu main-menu-dropdown" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-headset"></i> Support <br>
+                                    <div class="d-bal">Agent Workspace</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-quidditch"></i> Guide <br>
+                                    <div class="d-bal">Help Center</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-feather"></i> Gather <br>
+                                    <div class="d-bal">Comunnity Forum</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-comment-dots"></i> Chat <br>
+                                    <div class="d-bal">Live chat & messaging</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-instalod"></i> Talk <br>
+                                    <div class="d-bal">Voice</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-sellcast"></i> Sell <br>
+                                    <div class="d-bal">Sales CRM</div>
+                                </a></li>
+                            <li class="menu-last-item text-center"><a class="dropdown-item text-center text-primary" href="#">Admin Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn menu-btn menu-btn-2 dropdown-toggle user-icon" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle "></i>
+                        </a>
+
+                        <ul class="dropdown-menu main-menu-2" aria-labelledby="dropdownMenuLink">
+                            <li class="first-item"><a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i>
+                                    moltopersonal <br> <small>View Profile</small></a></li>
+                            <li><a class="dropdown-item" href="#">Get help</a></li>
+                            <li><a class="dropdown-item" href="#">Chat help center</a></li>
+                            <li><a class="dropdown-item" href="#">keybord Shortcuts</a></li>
+                            <li><a class="dropdown-item" href="#">Check connection</a></li>
+                            <li><a class="dropdown-item" href="#">Download debug report</a></li>
+                            <li><a class="dropdown-item" href="#">Privecy policy</a></li>
+                            <li class="menu-last-item"><a class="dropdown-item" href="#">Leaves</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <hr>
+            <div class="btn-group-list d-flex">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <div class="input-group search-bar mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-chevron-down"></i></span>
+                        <input type="search" class="form-control search-input" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                        <button class="btn learn-btn-2 ms-2">Clear search</button>
+                    </div>
+                </div>
+                <p class="total-para ms-auto mt-1 pe-2">50 unread</p>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">Page 1 of 651</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+            <table class="table table-2">
+                <thead>
+                    <tr>
+                        <th scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> Name
+                        </th>
+                        <th scope="col">Agent</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Rating</th>
+                        <th scope="col">Messages</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td><i class="far fa-thumbs-up"></i></td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td><i class="far fa-thumbs-up"></i></td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td><i class="far fa-thumbs-up"></i></td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td><i class="far fa-thumbs-up"></i></td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                    <tr class="tr-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <td scope="row" class="visitors-table d-flex"><input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault"> #348978687</td>
+                        <td>Dhoche</td>
+                        <td>3 hrs ago</td>
+                        <td>-</td>
+                        <td>
+                            <span class="badge bg-secondary">2</span> hi can i claim bond hello checking one second please EPPK-ZAME-NPWV-9JJM-82N0 https://www.runescape.co</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+
+
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content full-modal">
+                        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+                        <div class="modal-body modal-body-two">
+                            <div class="modal-left history-modal">
+                                <div class="d-flex history-menu">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example ">
+                                        <button type="button" class="btn">Transcript</button>
+                                        <button type="button" class="btn">User Info</button>
+
+                                    </div>
+                                    <div class="ms-auto">
+                                        <i class="fas fa-download pe-3 mt-3"></i>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                    </div>
+                                </div>
+                                <div class="chat-status-2">
+                                    <div class="top-status-2 p-2">
+                                        <div class="history-table">
+                                            <table>
+                                                <tbody class="">
+                                                    <tr class="tr-hover">
+                                                        <td class="pe-5">Rating</td>
+                                                        <td>_</td>
+                                                    </tr>
+                                                    <tr class="tr-hover">
+                                                        <td class="pe-5">Comment</td>
+                                                        <td>_</td>
+                                                    </tr>
+                                                    <tr class="tr-hover">
+                                                        <td class="pe-5">Tags</td>
+                                                        <td><i class="fas fa-pen"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="history-para-main d-flex">
+                                            <p class=" history-para"><i>yalingokbayir@gmail.com has joined.</i></p>
+                                            <p class="ms-auto">6:21</p>
+                                        </div>
+                                        <div class="cleint-message d-flex">
+                                            <p class="aribaGold"><b>AribaGold</b></p>
+                                            <p class="ms-auto">5:24</p>
+                                        </div>
+                                        <p class="realtime-message"><i class="fas fa-circle me-1"></i>Find a coupon inside discord and many others giveways<i class="fas fa-circle ms-1 me-1"></i><a href="#">https://discord.gg/Ydgjk457</a></p>
+                                        <div class="cleint-message d-flex">
+                                            <p class="aribaGold text-warning"><b>Guest</b></p>
+                                            <p class="ms-auto">5:24</p>
+                                        </div>
+                                        <p class="realtime-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque ut corporis recusandae. Similique quam provident debitis quae nihil repudiandae!
+                                        </p>
+                                        <div class="cleint-message d-flex text-center">
+                                            <p class="text-center"><b>Karim has joined now</b></p>
+                                            <p class="ms-auto">5:24</p>
+                                        </div>
+                                        <p class="realtime-message text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <div class="cleint-message d-flex">
+                                            <p class="aribaGold text-warning"><b>callumleemerryy@gmail.com</b></p>
+                                            <p class="ms-auto">5:24</p>
+                                        </div>
+                                        <p class="realtime-message">how are you?</p>
+                                        <div class="cleint-message d-flex">
+                                            <p class="aribaGold"><b>AribaGold</b></p>
+                                            <p class="ms-auto">5:24</p>
+                                        </div>
+                                        <p class="realtime-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <div class="cleint-message d-flex">
+                                            <p class="aribaGold"><b>AribaGold</b></p>
+                                            <p class="ms-auto">5:24</p>
+                                        </div>
+                                        <p class="realtime-message">Lorem ipsum dolor sit amet consectetur.</p>
+                                        <div class="history-para-main d-flex">
+                                            <p class=" history-para"><i><small>yalingokbayir@gmail.com has
+                                                        joined.</small></i></p>
+                                            <p class="ms-auto">6:21</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- start analytics section  -->
+    <section id="Analytics" class="tabcontent main">
+        <div class="visitor sticky-top">
+            <div class="header d-flex">
+                <div class="name me-auto">
+                    <p class="visitors-name">Analytics</p>
+                </div>
+                <div class="ms-auto d-flex">
+                    <div class="dropdown">
+                        <a class="btn menu-btn menu-btn-1 user-icon dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-th-large"></i>
+                        </a>
+
+                        <ul class="dropdown-menu main-menu-dropdown" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-headset"></i> Support <br>
+                                    <div class="d-bal">Agent Workspace</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-quidditch"></i> Guide <br>
+                                    <div class="d-bal">Help Center</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-feather"></i> Gather <br>
+                                    <div class="d-bal">Comunnity Forum</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-comment-dots"></i> Chat <br>
+                                    <div class="d-bal">Live chat & messaging</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-instalod"></i> Talk <br>
+                                    <div class="d-bal">Voice</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-sellcast"></i> Sell <br>
+                                    <div class="d-bal">Sales CRM</div>
+                                </a></li>
+                            <li class="menu-last-item text-center"><a class="dropdown-item text-center text-primary" href="#">Admin Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn menu-btn menu-btn-2 dropdown-toggle user-icon" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle "></i>
+                        </a>
+
+                        <ul class="dropdown-menu main-menu-2" aria-labelledby="dropdownMenuLink">
+                            <li class="first-item"><a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i>
+                                    moltopersonal <br> <small>View
+                                        Profile</small></a></li>
+                            <li><a class="dropdown-item" href="#">Get help</a></li>
+                            <li><a class="dropdown-item" href="#">Chat help center</a></li>
+                            <li><a class="dropdown-item" href="#">keybord Shortcuts</a></li>
+                            <li><a class="dropdown-item" href="#">Check connection</a></li>
+                            <li><a class="dropdown-item" href="#">Download debug report</a></li>
+                            <li><a class="dropdown-item" href="#">Privecy policy</a></li>
+                            <li class="menu-last-item"><a class="dropdown-item" href="#">Leaves</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <hr>
+            <div class="analytics-main-para pb-3">
+                <h3 class="ps-3 pe-3 mt-5">Track the chats you have with customers and turn them into actionable insights to improve performance.</h3>
+                <button class="btn btn-primary mt-3">Get started</button>
+                <button class="btn border-1 learn mt-3">Learn more</button>
+                <p>*Available only for administrators and account owners on the Professional and Enterprise plans.
+                </p>
+            </div>
+
+            <!-- carousel -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/analys-1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/analys-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/analys-3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <hr>
+            <div class="bottom-card">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Monitor</h4>
+                        <img src="img/card-1.png" alt="">
+                        <p>Track your chat volume to get a better idea of which days are the busiest.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Measure</h4>
+                        <img src="img/card-2.png" alt="">
+                        <p>Examine why chats are being missed and why wait times increase during certain periods.
+                        </p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Optimize</h4>
+                        <img src="img/card-3.png" alt="">
+                        <p>Use the metrics to anticipate customer needs and increase satisfaction.</p>
+                    </div>
+                </div>
+                <div class="analytics-main-para-two pb-3">
+
+                    <button class="btn btn-primary mt-3">Get started</button>
+                    <button class="btn border-1 learn mt-3">Learn more</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="section main tabcontent personal" id="Personal">
+        <div class="visitor">
+            <div class="header d-flex">
+                <div class="name me-auto">
+                    <p class="visitors-name">Personal</p>
+                </div>
+                <div class="ms-auto d-flex">
+                    <div class="dropdown">
+                        <a class="btn menu-btn menu-btn-1 user-icon dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-th-large"></i>
+                        </a>
+
+                        <ul class="dropdown-menu main-menu-dropdown" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-headset"></i> Support <br>
+                                    <div class="d-bal">Agent Workspace</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-quidditch"></i> Guide <br>
+                                    <div class="d-bal">Help Center</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-feather"></i> Gather <br>
+                                    <div class="d-bal">Comunnity Forum</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-comment-dots"></i> Chat <br>
+                                    <div class="d-bal">Live chat & messaging</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-instalod"></i> Talk <br>
+                                    <div class="d-bal">Voice</div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-sellcast"></i> Sell <br>
+                                    <div class="d-bal">Sales CRM</div>
+                                </a></li>
+                            <li class="menu-last-item text-center"><a class="dropdown-item text-center text-primary" href="#">Admin Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn menu-btn menu-btn-2 dropdown-toggle user-icon" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle "></i>
+                        </a>
+
+                        <ul class="dropdown-menu main-menu-2" aria-labelledby="dropdownMenuLink">
+                            <li class="first-item"><a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i>
+                                    moltopersonal <br> <small>View
+                                        Profile</small></a></li>
+                            <li><a class="dropdown-item" href="#">Get help</a></li>
+                            <li><a class="dropdown-item" href="#">Chat help center</a></li>
+                            <li><a class="dropdown-item" href="#">keybord Shortcuts</a></li>
+                            <li><a class="dropdown-item" href="#">Check connection</a></li>
+                            <li><a class="dropdown-item" href="#">Download debug report</a></li>
+                            <li><a class="dropdown-item" href="#">Privecy policy</a></li>
+                            <li class="menu-last-item"><a class="dropdown-item" href="#">Leaves</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <hr>
+            <div class="btn-group-list d-flex">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn">Profile</button>
+                    <button type="button" class="btn">Sounds & notifications</button>
+                    <button type="button" class="btn">Idle timeout</button>
+                    <button type="button" class="btn">Email reports</button>
+                    <button type="button" class="btn">Labs</button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="person_body">
+                <div class="box">
+
+                    <div class="person_profile">
+                        <label>Profile</label>
+                        <div class="under-lone"></div>
+                        <div class="under-ltwo"></div>
+                        <form class="container">
+                            <form>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Name</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <span>moltopersonal</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Email</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <span>moltopersonal@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Profile</label>
+                                    </div>
+                                    <div class="col-75 edit-profile">
+                                        <a href="#">Edit profile</a>
+                                        <i class="fa-solid fa-pen-to-square"></i> <br> <br>
+                                        <label for="">Update your name, email, and password</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Display name</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="dname" name="" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Tagline</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="tagline" name="" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Avatar</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <table>
+                                            <tr>
+                                                <td rowspan="2"><span class="pic"><img src="img/img-ic.jpg"
+                                                            alt=""></span></td>
+                                                <td><button> Upload image</button><button disabled>Remove</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="">Appears when chatting with visitors using the new widget Maximum size 100 KB, recommended dimensions 50x50px</td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+
+                    <div class="person_preferences">
+                        <label>Preferences</label>
+                        <div class="under-lthree"></div>
+                        <div class="under-ltwo"></div>
+                        <form class="container">
+                            <form>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Dashboard language</label>
+                                    </div>
+                                    <div class="col-75 lang-s">
+                                        <select id="lan" name="">
+                                            <option value="">English</option>
+                                            <option value="">العربية</option>
+                                            <option value="">čeština</option>
+                                            <option value="">dansk</option>
+                                            <option value="">Deutsch</option>
+                                            <option value="">ελληνικά</option>
+                                            <option value="">Español</option>
+                                            <option value="">中文(简体)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Chat limit</label>
+                                    </div>
+                                    <div class="col-75 valu-s text-cone">
+                                        <select id="chat" name="" disabled>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                        </select>
+                                        <p>Number of chats you are allowed to take. Admins can edit other chat routing settings under
+                                            <a href="#">Routing > Settings.</a></p>
+                                        <p><b>Chat limit is not enabled</b></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Skils</label>
+                                    </div>
+                                    <div class="col-75 text-cone">
+                                        <input type="text" id="skill" name="" placeholder="">
+                                        <p>Identify the agent's capabilities. Assign up to 5 skills per agent. Add skills under
+                                            <a href="#">Routing > Skills.</a></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Keyboard shortcuts</label>
+                                    </div>
+                                    <div class="col-75 text-cone">
+                                        <input type="checkbox" id="keyboard" name="keyboard" value="enable">
+                                        <span>&nbsp;&nbsp;</span>
+                                        <label for="keyboard">Enable keyboard shortcuts</label><br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Offline message notification</label>
+                                    </div>
+                                    <div class="col-75 text-cone">
+                                        <input type="checkbox" id="notification" name="notification" value="enable">
+                                        <span>&nbsp;&nbsp;</span>
+                                        <label for="notification">Receive email notification when visitors send an
+                                            offline
+                                            message</label><br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="">Zendesk Chat updates</label>
+                                    </div>
+                                    <div class="col-75 text-cone">
+                                        <input type="checkbox" id="Zendesk" name="Zendesk" value="enable">
+                                        <span>&nbsp;&nbsp;</span>
+                                        <label for="Zendesk">Receive periodic email updates from Zendesk
+                                            Chat</label><br>
+                                    </div>
+                                    <div class="row">
+                                        <div class="under-ltwo"></div>
+                                        <div class="save-btn">
+                                            <button>Save changes </button><button disabled>Revert changes</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-user-circle "></i> Guest
+                                <span class="group-fonts ms-auto"><i class="fas fa-flag" title="country flag"></i><i
+                                        class="fab fa-windows ms-2 me-2" title="windows 10"></i><i
+                                        class="fab fa-chrome me-3" title="google chrome"></i></span></h5>
+                            <span class="ms-auto ms-3">
+                                <div class="dropdown">
+                                    <a class="btn select-menu-btn btn-secondary dropdown-toggle" href="#" role="button"
+                                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </a>
+
+                                    <ul class="dropdown-menu select-dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Invite agent/transfer to agent</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Transfer to department</a></li>
+                                        <li><a class="dropdown-item" href="#">Export Transcript</a></li>
+                                        <li><a class="dropdown-item" href="#">Ban visitor</a></li>
+                                        <li><a class="dropdown-item" href="#">Translate chat</a></li>
+                                    </ul>
+                                </div>
+                            </span>
+                            <button type="button" class="btn-close ms-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="modal-left col-9">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn">Current Chats</button>
+                                        <button type="button" class="btn">Past Chat</button>
+                                    </div>
+                                    <div class="chat-status">
+                                        <div class="top-status p-2">
+                                            <div class="current-chat-para d-flex">
+                                                <p class="ps-5">yalingokbayir@gmail.com has joined.</p>
+                                                <p class="ms-auto">6:21</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="bottom-status">
+                                            gbrelzaahir@gmail.com has gone offline.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-right col-3">
+                                    <div class="row">
+                                        <div class="col-2 guest-logo">
+                                            <i class="fas fa-user-circle "></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <h4>Guest</h4>
+                                            <input type="email" name="email" id="" placeholder="Add email">
+                                        </div>
+                                    </div>
+                                    <input class="mt-3" type="text" name="" id="" placeholder="Add mobile number">
+                                    <textarea class="mt-3" name="" id="" rows="5" placeholder="Add visitors notes"></textarea>
+                                    <div class="tag d-flex">
+                                        <p>Tags</p>
+                                        <p class="ms-auto question-modal" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                                            ?</p>
+                                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalToggleLabel">Tags
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Categorize and group chats with tags to gain insight into your chat sessions. <a href="">Learn more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Add chat tags</p>
+                                    <hr>
+                                    <div class="row w-100 ms-auto me-1">
+                                        <div class="col-4 border-div">
+                                            <h4 class="text-bold">50</h4>
+                                            <p>Post Visit</p>
+                                        </div>
+                                        <div class="col-4 border-div">
+                                            <h4 class="text-bold">50</h4>
+                                            <p>Post Visit</p>
+                                        </div>
+                                        <div class="col-4 border-div">
+                                            <h4 class="text-bold">50</h4>
+                                            <p>Post Visit</p>
+                                        </div>
+                                    </div>
+                                    <div class="visitor-path">
+                                        <p>Visitors path</p>
+                                        <p><span>&darr; </span> Direct Trafic</p>
+                                        <p><span>&diams; </span> AribaGold - Buy OSRS Gold | Buy RS Gold | C</p>
+                                        <p></p>
+                                    </div>
+                                    <div class="last-div-right">
+                                        <p>Location <br> Switzerland <br> Browser <br> Chrome 102.0.5005.63 <br> Platform <br> Windows 10 <br> Device <br> - <br> IP address <br> 194.126.177.90 <br> Hostname <br> - <br> User agent <br> Mozilla/5.0 (Windows
+                                            NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
